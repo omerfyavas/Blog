@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OmerBlog.Data\OmerBlog.Data.csproj" />
+    <ProjectReference Include="..\OmerBlog.Entity\OmerBlog.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

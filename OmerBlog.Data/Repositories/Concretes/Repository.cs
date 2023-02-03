@@ -77,5 +77,10 @@ namespace OmerBlog.Data.Repositories.Concretes
         {
             return await Table.CountAsync(predicate);
         }
+
+        public Task addSync(T entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

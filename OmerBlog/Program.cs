@@ -1,13 +1,12 @@
-using Microsoft.EntityFrameworkCore;
-using OmerBlog.Data.Context;
-using System.Reflection;
+using OmerBlog.Service.Extensions;
+using OmerBlog.Data.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-var assembly = Assembly.GetExecutingAssembly().FullName;
 
 // Add services to the container.
+builder.Services.LoadDataLayerExtension(builder.Configuration);
+builder.Services.LoadServiceLayerExtension();
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 var app = builder.Build();
