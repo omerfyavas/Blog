@@ -1,14 +1,10 @@
-﻿using OmerBlog.Entity.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OmerBlog.Entity.DTOs.Articles;
+using OmerBlog.Entity.Entities;
 
 namespace OmerBlog.Service.Services.Abstractions
 {
     public interface IArticleService
     {
-        Task<List<Article>> GetAllArticlesAsync();
+        Task<List<ArticleDto>> GetAllArticlesAsync();
     }
 }

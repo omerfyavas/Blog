@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OmerBlog.Models;
+using OmerBlog.Web.Models;
 using OmerBlog.Service.Services.Abstractions;
 using System.Diagnostics;
 
@@ -11,13 +11,13 @@ namespace OmerBlog.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IArticleService articleService;
-        public HomeController(ILogger<HomeController> logger,IArticleService articleService)
+        public HomeController(ILogger<HomeController> logger, IArticleService articleService)
         {
             _logger = logger;
             this.articleService = articleService;
         }
 
-        public async Task <IActionResult> Index()
+        public async Task<IActionResult> Index()
         {
             var articles = await articleService.GetAllArticlesAsync();
             return View(articles);

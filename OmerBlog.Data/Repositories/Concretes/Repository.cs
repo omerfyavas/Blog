@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using OmerBlog.Core.Entities;
 using OmerBlog.Data.Context;
-using System.Linq.Expressions;
 using OmerBlog.Data.Repositories.Abstractions;
+using System.Linq.Expressions;
 
 namespace OmerBlog.Data.Repositories.Concretes
 {

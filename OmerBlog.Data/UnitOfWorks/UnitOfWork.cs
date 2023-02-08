@@ -19,7 +19,7 @@ namespace OmerBlog.Data.UnitOfWorks
 
         public int Save()
         {
-           return dbContext.SaveChanges();
+            return dbContext.SaveChanges();
         }
 
         public async Task<int> SaveAsync()

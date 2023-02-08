@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using OmerBlog.Core.Entities;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using OmerBlog.Core.Entities;
 
 namespace OmerBlog.Data.Repositories.Abstractions
 {
-    public interface IRepository <T> where T : class,IEntityBase,new()
+    public interface IRepository<T> where T : class, IEntityBase, new()
     {
         Task addSync(T entity);
 
@@ -22,7 +17,7 @@ namespace OmerBlog.Data.Repositories.Abstractions
 
         Task DeleteAsync(T entity);
 
-        Task<bool> AnyAsync(Expression<Func<T, bool>> predicate );
+        Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
 
         Task<int> CountAsync(Expression<Func<T, bool>> predicate = null);
 

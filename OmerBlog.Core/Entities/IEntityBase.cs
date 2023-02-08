@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OmerBlog.Core.Entities
+﻿namespace OmerBlog.Core.Entities
 {
     public interface IEntityBase
     {

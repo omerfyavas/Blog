@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OmerBlog.Core.Entities
-{ 
+﻿namespace OmerBlog.Core.Entities
+{
     public abstract class EntityBase : IEntityBase
     {
-        public virtual Guid? Id { get; set; }= Guid.NewGuid();
+        public virtual Guid? Id { get; set; } = Guid.NewGuid();
 
         public virtual string CreatedBy { get; set; }
 
