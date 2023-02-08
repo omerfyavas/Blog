@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using OmerBlog.Service.Services.Abstractions;
 using OmerBlog.Service.Services.Concrete;
 
