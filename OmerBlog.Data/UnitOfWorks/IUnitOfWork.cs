@@ -1,10 +1,5 @@
 ﻿using OmerBlog.Core.Entities;
 using OmerBlog.Data.Repositories.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OmerBlog.Data.UnitOfWorks
 {

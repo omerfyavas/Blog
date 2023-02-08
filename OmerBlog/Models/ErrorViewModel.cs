@@ -1,4 +1,4 @@
-namespace OmerBlog.Models
+namespace OmerBlog.Web.Models
 {
     public class ErrorViewModel
     {

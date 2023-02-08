@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OmerBlog.Core.Entities;
+﻿using OmerBlog.Core.Entities;
 
 
 namespace OmerBlog.Entity.Entities
 {
-    public class Image : EntityBase 
+    public class Image : EntityBase
     {
 
         public string FileName { get; set; }
 
-        public string FileType { get; set; }    
+        public string FileType { get; set; }
 
         public ICollection<Image> Images { get; set; }
     }
