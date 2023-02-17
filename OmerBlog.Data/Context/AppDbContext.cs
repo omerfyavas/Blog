@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OmerBlog.Entity.Entities;
 using System.Reflection;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace OmerBlog.Data.Context
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid, AppUserClaim, AppUserRole, AppUserLogin,AppRoleClaim ,AppUserToken >
     {
-        protected AppDbContext()
+        public AppDbContext()
         {
 
         }
@@ -22,6 +23,7 @@ namespace OmerBlog.Data.Context
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         }

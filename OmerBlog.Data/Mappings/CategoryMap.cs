@@ -18,7 +18,7 @@ namespace OmerBlog.Data.Mappings
             },
             new Category
             {
-                Id = Guid.Parse("{AD9180BE-0847-4952-BB2C-34A21A08063F}"),
+                Id = Guid.Parse("AD9180BE-0847-4952-BB2C-34A21A08063F"),
                 Name = "Deneme Makale",
                 CreatedBy = "Admin",
                 CreatedOn = DateTime.Now,

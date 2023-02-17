@@ -1,4 +1,6 @@
-﻿namespace OmerBlog.Core.Entities
+﻿using System;
+
+namespace OmerBlog.Core.Entities
 {
     public abstract class EntityBase : IEntityBase
     {

@@ -1,15 +1,14 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using OmerBlog.Service.Services.Abstractions;
 
 namespace OmerBlog.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
-    public class HomeController : Controller
+    public class ArticleController : Controller
     {
         private readonly IArticleService articleService;
-        public HomeController(IArticleService articleService)
+
+        public ArticleController(IArticleService articleService)
         {
             this.articleService = articleService;
         }
